@@ -1,0 +1,28 @@
+<div id="index" >
+                <div id="login-page"> <img id="background-img-index" src="img/wallpapers/2.jpg" alt="">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="thinkShell" class="col-xs-12 col-md-6 text-center">
+                                <h1>ThinkShell</h1> </div>
+                            <div class="col-xs-12 col-md-6 text-center " id="login-register-form">
+                                <button type="" id="login-button" onclick="loginFormAnimation()" class="btn">Login</button>
+                                <form id="login-form" action="" (ngSubmit) = "loginUser()" method="post">
+                                    <div class="g-signin2 form-control" data-onsuccess="onSignIn"></div>
+                                    <input type="text" id="form-email" class="form-control" name="username" placeholder="Username">
+                                    <input type="password" id="form-password" name="password" class="form-control" placeholder="Password">
+                                    <input type="submit" name="submit" value="Login" class="btn form-control"> </form>
+                                <hr>
+                                <button id="register-button" onclick="registerFormAnimation()" class="btn">Register</button>
+                                <form id="signup-form" method="post" action="add-user.php">
+                                    <input type="text" class="form-control" placeholder="Name" name="name" required>
+                                    <input name="username" type="text" class="form-control" placeholder="username" required>
+                                    <input name="password" type="password" class="form-control" placeholder="Password" required>
+                                    <input name="email" type="email" class="form-control" placeholder="Email" required>
+                                    <input name="submit" type="submit" class="btn form-control"> </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+

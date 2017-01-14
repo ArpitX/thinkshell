@@ -1,0 +1,87 @@
+html {
+                background-color: #0a0a0a;
+            }
+            
+
+
+            .error {
+                position: absolute;
+                z-index: 1000;
+                color: red;
+            }
+            
+            button:focus {
+                outline: none;
+                box-shadow: none !important;
+            }
+            
+            .btn {
+                padding: 12px 22px !important;
+                transition: all 0.3s;
+            }
+            
+            .btn:hover {
+                background-color: white;
+                color: grey;
+                box-shadow: none;
+            }
+            
+            html {
+                height: 100%;
+            }
+            
+            body {
+                height: 100%;
+            }
+            
+            #index {
+                height: 100%;
+                position: absolute;
+            }
+            
+            #login-page {
+                height: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                width: 100%;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            
+            #login-page .container-fluid {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(16, 0, 23, 0.3);
+                z-index: 10000;
+            }
+            
+            #login-page .container-fluid .row {
+                height: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                width: 100%;
+                margin-left: 0px;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            
+            @media (max-width:992px) {
+                #login-page .container-fluid {}
+                #login-page .container-fluid .row {
+                    height: 100%;
+                    display: block;
+                    width: 100%;
+                    padding-top: 30px;
+                }
+                #index hr {
+                    width: 80%;
+                }
+            }
