@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>thinkShell</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="1053920019004-iaqvfi75lk0vp0tdeka0gcvarmbb0one.apps.googleusercontent.com">
+    <link rel="stylesheet" href="css/bootstrap-gridsystem-only.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+        
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+      <base href="/">
+    <my-app>Loading...</my-app>
+    
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script>
+     
+    function loginFormAnimation(){
+        $('#login-form').slideToggle(300);
+        $('#signup-form').hide();
+    }
+    function registerFormAnimation(){
+        $('#signup-form').slideToggle(300);
+        $('#login-form').hide();
+    }
+    function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail());
+}
+
+    </script>
+    
+  </body>
+</html>
